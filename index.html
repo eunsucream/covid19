@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
+  <title>Nav bar</title>
+  <Style>
+  body{
+    margin: 0;
+    font-family: 'Yusei Magic';
+  }
+
+    a{
+      text-decoration: none;
+      color: white;
+      }
+      .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 8px 12px;
+  }
+
+  .navbar__logo{
+    font-size: 24px;
+    color: white;
+  }
+
+  .navbar__logo i {
+    color: #d49466;
+  }
+
+  .navbar__menu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .navbar__menu li {
+    padding: 8px 12px;
+  }
+
+  .navbar__menu li:hover{
+    background-color:  #d49466;
+    border-radius: 4px;
+  }
+
+  .navbar__icons {
+    list-style: none;
+    color: white;
+    display: flex;
+    padding-left: 0;
+  }
+
+  .navbar__icons li {
+    padding: 8px 12px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px 24px;
+  }
+  .navbar__menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .navbar__menu li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar__icons{
+    justify-content: center;
+    width:100%
+  }
+
+  .navbar__toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: #d49466;
+
+  .navbar__toogleBtn{
+
+    }
+  }
+
+  </style>
+  <script
+  src="https://kit.fontawesome.com/41bc54e514.js"
+  crossorigin="anonymous">
+  </script>
+
+
+</head>
+<body>
+ <nav class="navbar">
+   <div class="navbar__logo">
+      <i class="fas fa-bacteria"></i>
+      <a href="">Covid-19</a>
+     </div>
+
+     <ul class="navbar__menu">
+       <li><a href="">Home</a></li>
+       <li><a href="">Gallery</a></li>
+       <li><a href="">Help</a></li>
+       <li><a href="">FAQ</a></li>
+       <li><a href="">Covid History</a></li>
+    </ul>
+
+     <ul class="navbar__icons">
+       <li><i class="fab fa-instagram"></i></li>
+       <li><i class="fab fa-twitter"></i></li>
+
+     </ul>
+     <a href="" class="navbar__toogleBtn">
+     <i class="fas fa-bars"></i>
+     </a>
+
+     </nav>
+
+</body>
+</html>
